@@ -1,0 +1,36 @@
+#header {
+    background-color: blueviolet;
+    width: 100%;
+    height: 150px;
+    
+}
+
+#page {
+    display: flex;
+    height: 800px;
+}
+ 
+
+#sidebar {
+    background-color: chartreuse;
+    width: 200px;
+    height: 800px;
+
+}
+
+#inpage {
+    display: block;
+    width: 100%;
+    height: 800px;
+}
+
+#main {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 700px;
+}
+#footer {
+    background-color: aqua;
+    width: 100%;
+    height: 100px;
+}
