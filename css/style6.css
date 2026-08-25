@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #dcf5dc;
+    font-family: "SF pro", -apple-system, "Segoe UI", roboto, "Helvetica Neue", Arial, sans-serif;
+
+}
+
+Body > header {
+    background-color: black;
+    height: 100px;
+    color: rgb(255, 255, 255);
+
+}
+
+.wrapper {
+    width: 1400px;
+    height: inherit;
+    margin: 0 auto 0 auto;
+    background-color: rgb(24, 24, 24);
+}
+
+body > header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 70px;
+    height: 70px;
+    gap: 10px;
+}
+
+nav {
+    width: 400px;
+    height: 50px;
+    
+}
+
+nav ul {list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    color: aquamarine;
+}
+
+
+main {
+    background-color: black;
+    height: 700px;
+    padding: 20px;
+    color: aliceblue;
+}
+
+footer { 
+    height: 600px;
+    background-color: black;
+
+
+}
