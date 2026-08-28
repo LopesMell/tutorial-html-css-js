@@ -74,7 +74,7 @@ nav ul li a.active {
 
 main {
     background-color: black;
-    height: 700px;
+    height: 1200px;
     padding: 20px;
     color: aliceblue;
 }
@@ -105,7 +105,7 @@ table {
  
  
  footer { 
-    height: 600px;
+    height: 400px;
     background-color: black;
 
 }
