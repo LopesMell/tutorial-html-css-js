@@ -17,6 +17,7 @@
                     <ul>
                         <li> <a href="atvd1.html" class="active">Home</a></li>
                         <li> <a href="atvd1-p2.html" class="active">Home2</a></li>
+                        <li> <a href="atvd1 forms.html" class="active">Cadastro</a></li>
                        
             
                     </ul>
@@ -32,28 +33,48 @@
                 <h1>Cadastro de investidor</h1>
 
                 <form>
-                    <label for="nameuser">Nome: </label>
-                    <input type="text" name="nameuser">
+                    <fieldset>
+                        <label for="nameuser">Nome: </label>
+                        <input type="text" name="nameuser">
 
-                    <label for="surname">Sobrenome: </label>
-                    <input type="text" name="surname">
+                        <label for="surname">Sobrenome: </label>
+                        <input type="text" name="surname">
 
-                    <label for="password">Senha: </label>
-                    <input type="password" name="password">
-
+                        <label for="password">Senha: </label>
+                        <input type="password" name="password">
+                    </fieldset>
+                    
                     <h3> Qual o seu perfil de investidor?</h3>
                     <div>
                         <input type="radio" name="perfilinvestidor" id="conservador" value="conservador">
                         <label for="conservador">Conservador</label>
                     </div>
                     <div>
-                        <input type="radio" name="perfilinvestidor" id="moderado" value="moderado">
-                        <label for="moderado">moderado</label>
+                        <input type="radio" name="perfilInvestidor" id="arrojado" value="arrojado">
+                        <label for="arrojado">Arrojado</label>
                     </div>
                     <div>
                         <input type="radio" name="perfilinvestidor" id="arrojado" value="arrojado">
                         <label for="arrojado">arrojado</label>
                     </div>
+
+                     <h4>Em quais tipos de investimentos você tem interesse?</h4>
+                     <div>
+                        <input type="checkbox" name="investimento" id="rendafixa">
+                        <label for="rendafixa">Renda Fixa</label>
+                     </div>
+                     <div>
+                        <input type="checkbox" name="investimento" id="rendavariavel">
+                        <label for="rendavariavel">Renda Variável</label>
+                     </div>
+                     <div>
+                        <input type="checkbox" name="investimento" id="fundosimobiliarios">
+                        <label for="fundosimobiliarios">Fundos Imobiliários</label>
+                     </div>
+                     <div>
+                        <input type="checkbox" name="investimento" id="criptoativos">
+                        <label for="criptoativos">Criptoativos</label>
+                     </div>
                     
                 </form>
 
