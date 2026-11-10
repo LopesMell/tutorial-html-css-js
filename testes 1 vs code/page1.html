@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade</title>
+    <link rel="stylesheet" href="css/atvd1-style.css">
+</head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div id="logo">
+                    <img src="img/money-svgrepo-com.svg" alt="logo if">
+                    <h1>Regiões <span>atividades</span></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li> <a href="atvd1.html" class="active">Home</a></li>
+                        <li> <a href="atvd1-p2.html" class="active">Home2</a></li>
+                        <li> <a href="atvd1 forms.html" class="active">Cadastro</a></li>
+                        <li> <button onclick="openModal('addStockModal')">+ add</button></li>
+
+                    </ul>
+
+                </nav>
+            </div> 
+        </header>
+
+        <main>
+            <div class="wrapper">
+            
+                <h1>Bem vindo(a)!</h1>
+
+                
+            </div>
+
+           
+        </main>
+
+        <footer>
+            <div class="wrapper"></div>
+        </footer>
+        
+        <div class="modal" id="addStockModal">
+            <main>
+                <h2>Adicionar ação</h2>
+                <form id="addstockform">
+                    <label for="stockTicker">Sigla:</label>
+                    <input type="text" id="stockTicker" name="stockTicker">
+                    <label for="stockName">Nome da ação:</label>
+                    <input type="text" id="stockName" name="stockName">
+                    <label for="stockPrice">Valor da ação:</label>
+                    <input type="number" id="stockPrice" name="stockPrice">
+                    <label for="stockQuantity">Quantidade de ações:</label>
+                    <input type="number" id="stockQuantity" name="stockQuantity">
+
+                    <input type="submit" value="adicionar">
+                </form>
+            </main>
+        </div>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
