@@ -31,10 +31,27 @@
             
                 <h1>Bem vindo(a)!</h1>
 
-                
-            </div>
-
            
+                <div id="stockList">
+                        <div class="stockCard">
+                        <header>
+                                <div>
+                                    <h2>APPL</h2>
+                                    <span>Apple Inc.</span>
+                                </div>
+                                <span class="stockValue up" >$ 100.00</span>
+                            </header>
+                            <footer class="stockPosition">
+                                <span><b>5</b> ações</span>
+                                <div>
+                                    <span>Total</span>
+                                    <span class="totalValue">$ 500.00</span>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer>
@@ -44,9 +61,9 @@
         <div class="modal" id="addStockModal">
             <main>
                 <h2>Adicionar ação</h2>
-                <form id="addstockform">
+                <form id="addstockform" onsubmit="addStock(event)">
                     <label for="stockTicker">Sigla:</label>
-                    <input type="text" id="stockTicker" name="stockTicker">
+                    <input type="text" id="stockTicket" name="stockTicket">
                     <label for="stockName">Nome da ação:</label>
                     <input type="text" id="stockName" name="stockName">
                     <label for="stockPrice">Valor da ação:</label>
@@ -55,6 +72,8 @@
                     <input type="number" id="stockQuantity" name="stockQuantity">
 
                     <input type="submit" value="adicionar">
+
+                    <button onclick="closeModal('addStockModal')">Fechar</button>
                 </form>
             </main>
         </div>

@@ -14,7 +14,7 @@ Body > header {
 }
 
 .wrapper {
-    width: 1400px;
+    width: 100%;
     height: inherit;
     margin: 0 auto 0 auto;
     background-color: rgb(24, 24, 24);
@@ -66,18 +66,19 @@ nav ul li a {
 nav ul li a:hover {
     color: #b7c93c;
 }
+
 nav ul li a.active {
     color: #60b016;
 }
 
 
 
-
 main {
     background-color: black;
     min-height: 600px;
-    padding: 20px;
-    color: aliceblue;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -186,4 +187,60 @@ fieldset {
     padding: 10px 20px;
     border-radius: 15px;
     margin: 30px 0 0 0;
+}
+
+.stockCard {
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 112px;
+}
+
+.up{
+    color: #117911;
+}
+
+.down{
+    color: #ff0000;
+}
+
+.stockValue{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.totalValue{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stockCard header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stockCard header h2{
+    margin: 0;
+}
+
+.stockCard footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.stockCard footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+#stockList{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
